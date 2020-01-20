@@ -1,0 +1,85 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : 1.0
+java.runtime.name    : Java(TM) SE Runtime Environment
+java.version         : 1.8.0_231
+java.home            : C:\Program Files\Java\jdk1.8.0_231\jre
+os.name              : Windows 10
+os.arch              : amd64
+os.version           : 10.0
+file.encoding        : UTF-8
+========================
+Run Started on Mon Jan 13 13:46:12 EST 2020
+Loading Browser Profile
+Loading RunManager
+[Scenario:BasicFeatures] [TestCase: Demo1TestCase] [Description: Demo1TestCase] [Browser: Chrome] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//cits/BasicWebFlow_Default]
+----------------------------------------------------------
+Initializing Report
+ApiLink not available!!
+Shutting Down Thread as there is no need for SelectiveThreading
+Running Iteration 1
+Launching Chrome
+Launching Remote Driver
+2020-01-13 13:46:13:01S -0500 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Launched
+Step:1   | Object: Browser | Action: Open | Input: @https://www.google.com | Conditon:  | @13-Jan-2020 13:46:13.013
+[DONE]   | Opened Url: https://www.google.com
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @30000 | Conditon:  | @13-Jan-2020 13:46:14.014
+[DONE]   | Thread sleep for '30000
+
+===================================================================================================
+
+Step:3   | Object: firstname | Action: verifyElementDisplayed | Input:  | Conditon:  | @13-Jan-2020 13:46:44.044
+Using @type [input], Object 'firstname' Found in 234 ms
+[FAIL]   | Element [firstname] is not Displayed
+
+===================================================================================================
+
+2020-01-13 13:46:44:01S -0500 [INFO] org.openqa.selenium.remote.ErrorCodes toStatus:HTTP Status: '404' -> incorrect JSON status mapping for 'no such alert' (400 expected)
+Step:4   | Object: firstname | Action: Set | Input: @Cognizant | Conditon:  | @13-Jan-2020 13:46:45.045
+Using @type [input], Object 'firstname' Found in 190 ms
+2020-01-13 13:46:46:01S -0500 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onError:com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [firstname] is Not Visible or hidden at the moment
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [firstname] is Not Visible or hidden at the moment
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
+	at com.cognizant.cognizantits.engine.commands.Basic.Set(Basic.java:97)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:148)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:144)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:132)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:60)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:376)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:334)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:123)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:79)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[FAIL]   | com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [firstname] is Not Visible or hidden at the moment
+
+===================================================================================================
+
+2020-01-13 13:46:46:01S -0500 [INFO] org.openqa.selenium.remote.ErrorCodes toStatus:HTTP Status: '404' -> incorrect JSON status mapping for 'no such alert' (400 expected)
+
+---------------------------------------------------
+Testcase Name        : BasicFeatures:Demo1TestCase
+Executed Steps       : 4
+Passed Steps         : 2
+Failed Steps         : 2
+Time Taken           : 00:00:34
+-----------------------------------------------------
+
+Run Finished on Mon Jan 13 13:46:47 EST 2020
+-----------------------------------------------------
+ExecutionDate        : 13-Jan-2020 13-46-12
+Executed TestCases   : 1
+Passed TestCases     : 0
+Failed TestCases     : 1
+Time Taken           : 00:00:34
+ReportPath           : file:///C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\13-Jan-2020 13-46-12\summary.html
+-----------------------------------------------------

@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://toolsqa.com/automation-practice-form/,,
+2,Browser,Wait for [<Data>] milli seconds,pause,@30000,,
+3,firstname,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Demo
+4,firstname,Enter the value [<Data>] in the Field [<Object>],Set,@Cognizant,,Demo

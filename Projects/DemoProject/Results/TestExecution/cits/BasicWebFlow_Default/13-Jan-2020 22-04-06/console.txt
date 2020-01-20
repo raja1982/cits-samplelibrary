@@ -1,0 +1,113 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : 1.0
+java.runtime.name    : Java(TM) SE Runtime Environment
+java.version         : 1.8.0_231
+java.home            : C:\Program Files\Java\jdk1.8.0_231\jre
+os.name              : Windows 10
+os.arch              : amd64
+os.version           : 10.0
+file.encoding        : UTF-8
+========================
+Run Started on Mon Jan 13 22:04:06 EST 2020
+Loading Browser Profile
+Loading RunManager
+[Scenario:BasicFeatures] [TestCase: Demo1TestCase] [Description: Demo1TestCase] [Browser: Firefox] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//cits/BasicWebFlow_Default]
+----------------------------------------------------------
+Initializing Report
+[main] INFO com.cognizant.cognizantits.engine.core.TMIntegration - TM integration disabled for the testset
+2020-01-13 22:04:07:01S -0500 [WARNING] com.cognizant.cognizantits.engine.reporting.util.ReportUtils loadDefaultTheme:null
+java.lang.NullPointerException
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.getFirstTheme(ReportUtils.java:65)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.loadDefaultTheme(ReportUtils.java:49)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler.createReport(HtmlSummaryHandler.java:106)
+	at com.cognizant.cognizantits.engine.reporting.SummaryReport.createReport(SummaryReport.java:71)
+	at com.cognizant.cognizantits.engine.core.Control.startRun(Control.java:132)
+	at com.cognizant.cognizantits.engine.core.Control.start(Control.java:58)
+	at com.cognizant.cognizantits.engine.core.Control.call(Control.java:75)
+	at com.cognizant.cognizantits.engine.cli.CLI.executeWith(CLI.java:119)
+	at com.cognizant.cognizantits.engine.cli.LookUp.exe(LookUp.java:165)
+	at com.cognizant.cognizantits.ide.main.Main.commandLineExecution(Main.java:67)
+	at com.cognizant.cognizantits.ide.main.Main.main(Main.java:55)
+
+ApiLink not available!!
+Shutting Down Thread as there is no need for SelectiveThreading
+Run Finished on Mon Jan 13 22:04:07 EST 2020Exception in thread "pool-2-thread-1" 
+java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\DockerHost\c\Configuration\ReportTemplate\html\testCase.html (The system cannot find the path specified)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.createReport(HtmlTestCaseHandler.java:87)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.createReport(TestCaseReport.java:99)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: C:\Users\DockerHost\c\Configuration\ReportTemplate\html\testCase.html (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.util.Scanner.<init>(Scanner.java:611)
+	at com.cognizant.cognizantits.datalib.util.data.FileScanner.readFile(FileScanner.java:47)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.createReport(HtmlTestCaseHandler.java:85)
+	... 5 more
+2020-01-13 22:04:07:01S -0500 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler updateReportHistoryData:Source 'C:\Users\DockerHost\c\Configuration\ReportTemplate\html\ReportHistory.html' does not exist
+java.io.FileNotFoundException: Source 'C:\Users\DockerHost\c\Configuration\ReportTemplate\html\ReportHistory.html' does not exist
+	at org.apache.commons.io.FileUtils.checkFileRequirements(FileUtils.java:1405)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1072)
+	at org.apache.commons.io.FileUtils.copyFileToDirectory(FileUtils.java:1012)
+	at org.apache.commons.io.FileUtils.copyFileToDirectory(FileUtils.java:973)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler.updateReportHistoryData(HtmlSummaryHandler.java:293)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler.finalizeReport(HtmlSummaryHandler.java:191)
+	at com.cognizant.cognizantits.engine.reporting.SummaryReport.finalizeReport(SummaryReport.java:132)
+	at com.cognizant.cognizantits.engine.core.Control.endExecution(Control.java:189)
+	at com.cognizant.cognizantits.engine.core.Control.startRun(Control.java:172)
+	at com.cognizant.cognizantits.engine.core.Control.start(Control.java:58)
+	at com.cognizant.cognizantits.engine.core.Control.call(Control.java:75)
+	at com.cognizant.cognizantits.engine.cli.CLI.executeWith(CLI.java:119)
+	at com.cognizant.cognizantits.engine.cli.LookUp.exe(LookUp.java:165)
+	at com.cognizant.cognizantits.ide.main.Main.commandLineExecution(Main.java:67)
+	at com.cognizant.cognizantits.ide.main.Main.main(Main.java:55)
+
+2020-01-13 22:04:07:01S -0500 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler finalizeReport:Source 'C:\Users\DockerHost\c\Configuration\ReportTemplate\html\summary.html' does not exist
+java.io.FileNotFoundException: Source 'C:\Users\DockerHost\c\Configuration\ReportTemplate\html\summary.html' does not exist
+	at org.apache.commons.io.FileUtils.checkFileRequirements(FileUtils.java:1405)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1072)
+	at org.apache.commons.io.FileUtils.copyFileToDirectory(FileUtils.java:1012)
+	at org.apache.commons.io.FileUtils.copyFileToDirectory(FileUtils.java:973)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler.createHtmls(HtmlSummaryHandler.java:210)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler.finalizeReport(HtmlSummaryHandler.java:197)
+	at com.cognizant.cognizantits.engine.reporting.SummaryReport.finalizeReport(SummaryReport.java:132)
+	at com.cognizant.cognizantits.engine.core.Control.endExecution(Control.java:189)
+	at com.cognizant.cognizantits.engine.core.Control.startRun(Control.java:172)
+	at com.cognizant.cognizantits.engine.core.Control.start(Control.java:58)
+	at com.cognizant.cognizantits.engine.core.Control.call(Control.java:75)
+	at com.cognizant.cognizantits.engine.cli.CLI.executeWith(CLI.java:119)
+	at com.cognizant.cognizantits.engine.cli.LookUp.exe(LookUp.java:165)
+	at com.cognizant.cognizantits.ide.main.Main.commandLineExecution(Main.java:67)
+	at com.cognizant.cognizantits.ide.main.Main.main(Main.java:55)
+
+-----------------------------------------------------
+ExecutionDate        : 13-Jan-2020 22-04-06
+Executed TestCases   : 0
+Passed TestCases     : 0
+Failed TestCases     : 0
+Time Taken           : 00:00:00
+ReportPath           : file:///C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\13-Jan-2020 22-04-06\summary.html
+-----------------------------------------------------
+2020-01-13 22:04:07:01S -0500 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler createLatest:Unable to delete directory C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\Latest.
+java.io.IOException: Unable to delete directory C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\Latest.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1581)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler.createLatest(HtmlSummaryHandler.java:263)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlSummaryHandler.finalizeReport(HtmlSummaryHandler.java:205)
+	at com.cognizant.cognizantits.engine.reporting.SummaryReport.finalizeReport(SummaryReport.java:132)
+	at com.cognizant.cognizantits.engine.core.Control.endExecution(Control.java:189)
+	at com.cognizant.cognizantits.engine.core.Control.startRun(Control.java:172)
+	at com.cognizant.cognizantits.engine.core.Control.start(Control.java:58)
+	at com.cognizant.cognizantits.engine.core.Control.call(Control.java:75)
+	at com.cognizant.cognizantits.engine.cli.CLI.executeWith(CLI.java:119)
+	at com.cognizant.cognizantits.engine.cli.LookUp.exe(LookUp.java:165)
+	at com.cognizant.cognizantits.ide.main.Main.commandLineExecution(Main.java:67)
+	at com.cognizant.cognizantits.ide.main.Main.main(Main.java:55)
+
+[main] INFO com.cognizant.cognizantits.engine.support.DesktopApi - Trying to Open - C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\13-Jan-2020 22-04-06\summary.html
+[main] INFO com.cognizant.cognizantits.engine.support.DesktopApi - Trying to exec: [explorer] [%s] [C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\13-Jan-2020 22-04-06\summary.html]

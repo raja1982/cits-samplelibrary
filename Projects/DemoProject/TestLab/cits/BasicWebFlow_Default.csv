@@ -1,0 +1,5 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+false,BasicFeatures,Iterations&SubIterations,Single,Failed,Chrome,Default,Any
+false,WebPagePerformanceTesting,WebPagePerformanceTesting,Single,Failed,Firefox,Default,Any
+true,BasicFeatures,Demo1TestCase,Single,Passed,Chrome,Default,Any
+false,BasicFeatures,Demo1TestCase,Single,Passed,Firefox,Default,Any

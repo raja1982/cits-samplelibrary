@@ -1,0 +1,15 @@
+2020-01-09 22:19:38:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startSpy:Launching Server for Spy
+2020-01-09 22:19:38:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2020-01-09 22:20:02:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Server Stopped
+2020-01-09 22:20:25:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startSpy:Launching Server for Spy
+2020-01-09 22:20:25:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2020-01-09 22:20:53:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Server Stopped
+2020-01-09 22:21:42:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startSpy:Launching Server for Spy
+2020-01-09 22:21:42:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2020-01-09 22:21:59:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Server Stopped
+2020-01-09 22:22:01:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startHeal:Launching Server for Heal
+2020-01-09 22:22:01:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2020-01-09 22:22:32:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Server Stopped
+2020-01-10 18:07:36:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startRecord:Launching Server for Record
+2020-01-10 18:07:36:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2020-01-10 18:07:38:01S -0500 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Server Stopped

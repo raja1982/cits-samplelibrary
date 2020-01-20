@@ -1,0 +1,73 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : 1.0
+java.runtime.name    : Java(TM) SE Runtime Environment
+java.version         : 1.8.0_231
+java.home            : C:\Program Files\Java\jdk1.8.0_231\jre
+os.name              : Windows 10
+os.arch              : amd64
+os.version           : 10.0
+file.encoding        : UTF-8
+========================
+Run Started on Fri Jan 10 18:20:43 EST 2020
+Loading Browser Profile
+Loading RunManager
+[Scenario:BasicFeatures] [TestCase: Demo1TestCase] [Description: Demo1TestCase] [Browser: Chrome] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//cits/BasicWebFlow_Default]
+----------------------------------------------------------
+Initializing Report
+ApiLink not available!!
+Shutting Down Thread as there is no need for SelectiveThreading
+Running Iteration 1
+Launching Chrome
+Launching Local Driver
+Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 48080
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1578698447.472][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+2020-01-10 18:20:48:01S -0500 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Launched
+Step:1   | Object: Browser | Action: Open | Input: URL_Global:URL | Conditon:  | @10-Jan-2020 18:20:48.048
+2020-01-10 18:20:48:01S -0500 [SEVERE] com.cognizant.cognizantits.engine.core.Task onError:Test Data Not Found, Iteration - 1 is missing.
+Test Data Not Found, Iteration - 1 is missing. 
+[Env : Default | Sheet : URL_Global | Field : URL | TestCase : BasicFeatures/Demo1TestCase ]
+	at com.cognizant.cognizantits.engine.execution.data.DataAccessInternal.throwErrorWithCause(DataAccessInternal.java:287)
+	at com.cognizant.cognizantits.engine.execution.data.DataAccess.getData(DataAccess.java:71)
+	at com.cognizant.cognizantits.engine.execution.data.DataProcessor.resolve(DataProcessor.java:64)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:169)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:143)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:132)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:60)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:376)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:334)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:123)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:79)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[DEBUG]   | Test Data Not Found, Iteration - 1 is missing. 
+[Env : Default | Sheet : URL_Global | Field : URL | TestCase : BasicFeatures/Demo1TestCase ]
+[Breaking execution!]
+
+===================================================================================================
+
+
+---------------------------------------------------
+Testcase Name        : BasicFeatures:Demo1TestCase
+Executed Steps       : 1
+Passed Steps         : 0
+Failed Steps         : 1
+Time Taken           : 00:00:06
+-----------------------------------------------------
+
+Run Finished on Fri Jan 10 18:20:50 EST 2020
+-----------------------------------------------------
+ExecutionDate        : 10-Jan-2020 18-20-43
+Executed TestCases   : 1
+Passed TestCases     : 0
+Failed TestCases     : 1
+Time Taken           : 00:00:06
+ReportPath           : file:///C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\10-Jan-2020 18-20-43\summary.html
+-----------------------------------------------------

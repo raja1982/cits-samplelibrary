@@ -1,0 +1,121 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : 1.0
+java.runtime.name    : Java(TM) SE Runtime Environment
+java.version         : 1.8.0_231
+java.home            : C:\Program Files\Java\jdk1.8.0_231\jre
+os.name              : Windows 10
+os.arch              : amd64
+os.version           : 10.0
+file.encoding        : UTF-8
+========================
+Run Started on Mon Jan 20 11:56:17 EST 2020
+Loading Browser Profile
+Loading RunManager
+[Scenario:BasicFeatures] [TestCase: Demo1TestCase] [Description: Demo1TestCase] [Browser: Firefox] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//cits/BasicWebFlow_Default]
+----------------------------------------------------------
+Initializing Report
+[main] INFO com.cognizant.cognizantits.engine.core.TMIntegration - TM integration disabled for the testset
+ApiLink not available!!
+Shutting Down Thread as there is no need for SelectiveThreading
+Running Iteration 1
+Launching Firefox
+Launching Remote Driver
+2020-01-20 11:56:23:01S -0500 [SEVERE] com.cognizant.cognizantits.engine.core.Task onError:Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USMGX466H2', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: SeleniumDriver
+org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USMGX466H2', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: SeleniumDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.createRemoteDriver(WebDriverFactory.java:293)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.create(WebDriverFactory.java:213)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.create(WebDriverFactory.java:151)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.createRemote(WebDriverFactory.java:137)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.launchDriver(SeleniumDriver.java:62)
+	at com.cognizant.cognizantits.engine.core.Task.launchBrowser(Task.java:159)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:120)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:79)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:343)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	... 15 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 30 more
+
+[DEBUG]   | Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USMGX466H2', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: SeleniumDriver
+[Breaking execution!]
+
+===================================================================================================
+
+2020-01-20 11:56:23:01S -0500 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler updateTestLog:null
+java.lang.NullPointerException
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:103)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.core.Task.onError(Task.java:192)
+	at com.cognizant.cognizantits.engine.core.Task.onError(Task.java:184)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:141)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:79)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+---------------------------------------------------
+Testcase Name        : BasicFeatures:Demo1TestCase
+Executed Steps       : 1
+Passed Steps         : 0
+Failed Steps         : 0
+Time Taken           : 00:00:05
+-----------------------------------------------------
+
+Run Finished on Mon Jan 20 11:56:23 EST 2020
+-----------------------------------------------------
+ExecutionDate        : 20-Jan-2020 11-56-17
+Executed TestCases   : 1
+Passed TestCases     : 0
+Failed TestCases     : 1
+Time Taken           : 00:00:06
+ReportPath           : file:///C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\20-Jan-2020 11-56-17\summary.html
+-----------------------------------------------------
+[main] INFO com.cognizant.cognizantits.engine.support.DesktopApi - Trying to Open - C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\20-Jan-2020 11-56-17\summary.html
+[main] INFO com.cognizant.cognizantits.engine.support.DesktopApi - Trying to exec: [explorer] [%s] [C:\Program Files (x86)\Cognizant Intelligent Test Scripter\Projects\DemoProject\Results\TestExecution\cits\BasicWebFlow_Default\20-Jan-2020 11-56-17\summary.html]
