@@ -15,7 +15,7 @@ pipeline {
         }
 	stage("Test Case Exeution") {
 	    steps {
-                bat "Run.bat -run -project_location "C:\Users\DockerHost\dockercompose1\workspace\CITS_SAMPLE_JOB1\Projects\DemoProject" -release "cits" -testset "BasicWebFlow_Default""
+                bat "Run.bat -run -project_location "C:\\Users\\DockerHost\\dockercompose1\\workspace\\CITS_SAMPLE_JOB1\\Projects\\DemoProject" -release "cits" -testset "BasicWebFlow_Default""
             }
         }	
         stage("Stop Grid"){
